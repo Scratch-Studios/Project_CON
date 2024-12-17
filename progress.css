@@ -16,8 +16,9 @@ height: 100px;
 margin-top: -30px;
 }
 body{
-    background-color: #52221F;
+height: 800px;
     background-color: #2c0907;
+
     
 }
 .container{
@@ -109,4 +110,7 @@ a{
 }
 a:hover{
     color: aqua;
+}
+.main{
+    
 }
