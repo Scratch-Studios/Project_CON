@@ -84,7 +84,7 @@ section:nth-child(odd)
 }
 #adu{
     display: inline-block;
-    float:left;
+    float: left;
     width: 40%;
 }
 #adu img{
