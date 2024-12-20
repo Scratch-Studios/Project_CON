@@ -59,6 +59,7 @@ nav ul li{
 #zepto{
     color:#E2A946;
     font-family: 'Times New Roman';
+    text-decoration: none;
 }
 nav ul li:hover
 {
