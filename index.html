@@ -1,10 +1,63 @@
-<!DOCTYPE html>
-<head>
-    <title> hello </title>
-</head>
-<body>
-    <h1> welcome</h1>
-    <h2> hello</h2>
-    <marquee><h3>thevai illama mathavangala trigger panna koodadhu ngaa..................</h3></marquee>
-</body>
+<html>
+  <head>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  </head>
+<body >
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<div id="d1"  >
+    <header>
+      <div id="s1">
+        <img src="assets/CON-working-bgremoved.png"id="i1">
+      </div>
+      <div  id="s2">
+        <h1>CHRONICLES OF NEDUMAARAN </h1>
+      </div>
+    </header>
+    <nav >
+      <ul >
+        <li> <a class="active" href="#home" id="zepto">HOME</a></li>
+        <li> <a href="#progress" id="zepto">PROGRESS</a></li>
+        <li> <a href="#people" id="zepto">PEOPLE</a></li>
+        <li> <a href="#characters" id="zepto">CHARACTERS</a></li>
+        <li> <a href="#update" id="zepto">UPDATE</a></li>
+        <li> <a href="#goals" id="zepto">GOALS </a></li>
+        <li><a href="#contact" id="zepto">CONTACT US</a></li> 
+      </ul>
+    </nav>
+    </div>
+    <section id="home">
+      <div id="homepage">
+        <section id="adu"><img src="assets/CON-logo.png"> </section>
+        <section id="adz"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio cumque veritatis, quibusdam accusamus officiis quidem libero explicabo, eius velit nulla maxime placeat sint. Exercitationem corrupti sequi ipsum quidem totam nemo iusto beatae, unde laboriosam, voluptatum accusamus sed explicabo, soluta quaerat incidunt accusantium! Officiis, dolor quasi cum doloremque voluptatum error odit libero hic nemo ea, praesentium mollitia cupiditate harum in possimus fugit explicabo, deleniti dolorum! Explicabo, quod quidem? Aliquid nostrum temporibus possimus eum eius suscipit vel deserunt iusto itaque molestiae vero laudantium atque et, at rerum distinctio? Corporis aperiam, labore pariatur optio perspiciatis nisi officia eligendi reiciendis saepe tempora molestias iure omnis magnam vel quos quisquam voluptas? Mollitia cupiditate, possimus veniam fugiat sunt numquam eum labore repudiandae earum dolor tempore porro dolores deleniti maxime laborum corporis. Laudantium reiciendis consequatur perspiciatis ullam quae! Est, veritatis deleniti in dolorum labore obcaecati blanditiis nam soluta quo repudiandae iusto ab pariatur facilis ex numquam tempora fuga. Itaque earum, quas blanditiis ducimus, neque iusto placeat eaque quo deleniti dolorum quos ipsa ut est a rem fugiat repellendus dignissimos minima nemo voluptatibus! Officia sit, quam enim dolore iste eaque? Laborum inventore numquam, molestiae dolorem commodi, unde quasi quam obcaecati vitae, sed amet voluptatem nostrum dignissimos? Vero porro vitae at adipisci magnam voluptatum esse autem, quaerat nostrum hic. Quia vero velit voluptatibus numquam mollitia, veniam libero provident dicta nulla quos doloribus rerum. Voluptates consectetur quam quos. Iusto, asperiores harum sint adipisci mollitia quasi inventore perferendis doloremque nihil voluptatibus commodi saepe qui nisi recusandae veniam excepturi iure error odio beatae pariatur! Sequi dignissimos eum voluptatum recusandae id consequatur officia doloribus quia impedit eaque ipsam minus hic alias veritatis molestiae omnis, natus perferendis soluta! Sapiente, porro fugit! Minima ducimus mollitia provident veritatis perspiciatis, illum quibusdam quidem aliquid nobis qui saepe exercitationem, necessitatibus rerum eveniet quia corrupti esse voluptate illo maiores. 
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quibusdam inventore ab repellendus iure nesciunt repellat, ratione possimus ex optio aliquam esse excepturi voluptate sed voluptatibus corporis ipsum. Alias, error!</p></section>
+    </div>
+    </section>
+    <section id="progress">progres</section>
+    <section id="people">people</section>
+    <section id="characters">characters</section>
+    <section id="update">update</section>
+    <section id="goals">goals</section>
+    <section id="contact">contact</section>
+  </body>
+  <script>
+    let section=document.querySelectorAll('section');
+    let navLinks=document.querySelectorAll('nav ul li a');
+    window.onscroll=()=>{
+        section.forEach(sec =>{
+          let top=window.scrollY;
+          let offset=sec.offsetTop;
+          let height=sec.offsetHeight;
+          let id=sec.getAttribute(' section id')
+          if (top >=offset && top < offset +height)
+          {
+              navLinks.forEach(links =>{
+                links.classList.remove('active');
+                document.querySelector('nav ul li a[href*='+id+']').classList.add('active');
+              })
+          }
+        });
+    };
+  </script>
 </html>
