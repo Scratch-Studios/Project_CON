@@ -4,67 +4,89 @@
     box-sizing: border-box;
 }
 body{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+   
     height: 100vh;
-    background-color: #2F191B;
-    padding: 0 35px;
+    background: linear-gradient(to right, #E8D4A3,#E2A946);
+
     
 }
+
+
+#btn1{
+    color: #E8D4A3;
+   padding: 10px;
+    text-align: center;
+    font-size: larger;
+    text-transform: uppercase;
+    background-color: #52221F;
+    font-weight: bold;
+    border-radius: 10px;
+    margin:50px 0px 60px  1150px ;
+ 
+ }
+ 
+ #btn1:hover{
+     box-shadow: 0 4px 5px #52221F;
+     transform: translateY(-2px);
+     cursor: pointer;
+ }
+ 
 
 .card-list .card-item{
     list-style: none;
 }
 
  .card-wrapper .card-list {
-
+    
     display: grid;
     grid-auto-flow: column;
-    grid-auto-columns: calc(100%/3)-12px;
-    gap: 20px;
-    /* overflow: hidden; */
+   
+    margin-bottom: 70px;
+
 }
 .card-list .card-item .card-link{
     width: 300px;
     display: block;
-    background-color:  #E9D4A3;
+    background-color:  #2F191B;
     padding: 20px;
     border-radius: 15px;
     text-decoration: none;
+    margin: 10px 10px;
   
 
 }
 
 
 .card-list .card-link .card-image {
-    width: 140px;
-    height: 140px;
+    width: 180px;
+    height: 180px;
    object-fit: cover;
     border-radius: 50%;
-   margin: 20px 50px;
-   border: 3px solid #2F191B ;
+   margin: 20px 40px;
+   border: 3px solid #E8D4A3;
 }
+
+
 .card-list .card-link .name {
 
-    color:  #E9D4A3;
+    color:  #52221F;
     padding: 8px 16px;
     margin: 10px 0 15px;
     font-size: 1.5rem;
     font-weight: 50;
-    background-color:#2F191B ;
+    background-color:#E8D4A3 ;
     border-radius: 50px;
     text-align: center;
    
 }
 .role{
     
-    color:  #E9D4A3;
+    color: #52221F ;
     padding: 8px 16px;
     margin: 10px 0 15px;
     font-size: 1.5rem;
     font-weight: 40;
-    background-color:#2F191B ;
+    background-color:#E8D4A3 ;
     border-radius: 50px;
     text-align: center;
     
@@ -74,12 +96,12 @@ body{
 .dept{
 
      
-    color:  #E9D4A3;
+    color:  #52221F;
     padding: 8px 16px;
     margin: 10px 0 15px;
     font-size: 1.2rem;
     font-weight: 50;
-    background-color:#2F191B ;
+    background-color: #E8D4A3;
     border-radius: 50px;
     text-align: center;
 
@@ -89,6 +111,6 @@ body{
 .card-list .card-link:hover{
     transform: translateY(-5px);
     transition: 0.3s ease;
-    box-shadow:  5px 5px #b9a5a3;
+    box-shadow:   2px 5px 5px #52221F;
 }
 
