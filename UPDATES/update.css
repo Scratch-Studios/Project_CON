@@ -12,24 +12,25 @@ body{
 
 #btn1{
    
-   text-align: center;
-   font-size: larger;
-   text-transform: uppercase;
+    text-align: center;
+    font-size: larger;
+    text-transform: uppercase;
+    padding: 15px;
+    border-color: #E9D4A3;
+    font-weight: bold;
+    border-radius: 20px;
+    margin: 50px 0px 20px  1120px ;
+    color: #E9D4A3 ;
+    background-color: #2F191B;
+ }
  
-   border-color:#8f3029;
-   font-weight: bold;
-   
-   margin: 100px 0  60px  1100px ;
-
-}
-
-#btn1:hover{
-    box-shadow: 0 4px 5px #b9a5a3;
-    transform: translateY(-2px);
-  
-    
-
-}
+ #btn1:hover{
+     box-shadow: 0 4px 5px #8f3029;
+     transform: translateY(-2px);
+     cursor: pointer;
+     
+ 
+ }
 
 
 .outer{
