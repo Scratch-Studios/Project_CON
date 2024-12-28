@@ -4,106 +4,67 @@
     box-sizing: border-box;
 }
 body{
-   
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
     height: 100vh;
-    background: linear-gradient(to right, #E8D4A3,#E2A946);
-
+    background-color: #2F191B;
+    padding: 0 35px;
     
 }
-
-   /* Hide the checkbox */
-   /* #toggle {
-    display: none;
-} */
-
-/* Initially hide the extra cards */
-#link {
-    display: none;
-}
-/* Show extra cards when checkbox is checked */
-#toggle:checked ~ .card-wrapper #link {
-    display: flex;
-}
-
-#btn1{
-    color: #E8D4A3;
-   padding: 10px;
-    text-align: center;
-    font-size: larger;
-    text-transform: uppercase;
-    background-color: #52221F;
-    font-weight: bold;
-    border-radius: 10px;
-    margin:50px 0px 60px  1150px ;
- 
- }
-
- 
- #btn1:hover{
-     box-shadow: 0 4px 5px #52221F;
-     transform: translateY(-2px);
-     cursor: pointer;
- }
- 
 
 .card-list .card-item{
     list-style: none;
-   
 }
 
  .card-wrapper .card-list {
-    
+
     display: grid;
     grid-auto-flow: column;
-    padding-bottom: 30px;
-     
-    margin: 20px 20px 70px 40px;
-
+    grid-auto-columns: calc(100%/3)-12px;
+    gap: 20px;
+    /* overflow: hidden; */
 }
 .card-list .card-item .card-link{
     width: 300px;
     display: block;
-    background-color:  #2F191B;
+    background-color:  #E9D4A3;
     padding: 20px;
     border-radius: 15px;
     text-decoration: none;
-    
-    
   
 
 }
 
 
 .card-list .card-link .card-image {
-    width: 180px;
-    height: 180px;
+    width: 140px;
+    height: 140px;
    object-fit: cover;
     border-radius: 50%;
-   margin: 20px 40px;
-   border: 3px solid #E8D4A3;
+   margin: 20px 50px;
+   border: 3px solid #2F191B ;
 }
-
-
 .card-list .card-link .name {
 
-    color:  #52221F ;
+    color:  #E9D4A3;
     padding: 8px 16px;
     margin: 10px 0 15px;
     font-size: 1.5rem;
     font-weight: 50;
-    background-color:#E8D4A3 ;
+    background-color:#2F191B ;
     border-radius: 50px;
     text-align: center;
    
 }
 .role{
     
-    color: #52221F ;
+    color:  #E9D4A3;
     padding: 8px 16px;
     margin: 10px 0 15px;
     font-size: 1.5rem;
     font-weight: 40;
-    background-color:#E8D4A3 ;
+    background-color:#2F191B ;
     border-radius: 50px;
     text-align: center;
     
@@ -113,12 +74,12 @@ body{
 .dept{
 
      
-    color:  #52221F;
+    color:  #E9D4A3;
     padding: 8px 16px;
     margin: 10px 0 15px;
     font-size: 1.2rem;
     font-weight: 50;
-    background-color: #E8D4A3;
+    background-color:#2F191B ;
     border-radius: 50px;
     text-align: center;
 
@@ -128,6 +89,6 @@ body{
 .card-list .card-link:hover{
     transform: translateY(-5px);
     transition: 0.3s ease;
-    box-shadow:   2px 5px 5px #52221F;
+    box-shadow:  5px 5px #b9a5a3;
 }
 
