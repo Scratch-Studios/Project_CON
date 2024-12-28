@@ -11,6 +11,19 @@ body{
     
 }
 
+   /* Hide the checkbox */
+   /* #toggle {
+    display: none;
+} */
+
+/* Initially hide the extra cards */
+#link {
+    display: none;
+}
+/* Show extra cards when checkbox is checked */
+#toggle:checked ~ .card-wrapper #link {
+    display: flex;
+}
 
 #btn1{
     color: #E8D4A3;
@@ -24,6 +37,7 @@ body{
     margin:50px 0px 60px  1150px ;
  
  }
+
  
  #btn1:hover{
      box-shadow: 0 4px 5px #52221F;
@@ -34,14 +48,16 @@ body{
 
 .card-list .card-item{
     list-style: none;
+   
 }
 
  .card-wrapper .card-list {
     
     display: grid;
     grid-auto-flow: column;
-   
-    margin-bottom: 70px;
+    padding-bottom: 30px;
+     
+    margin: 20px 20px 70px 40px;
 
 }
 .card-list .card-item .card-link{
@@ -51,7 +67,8 @@ body{
     padding: 20px;
     border-radius: 15px;
     text-decoration: none;
-    margin: 10px 10px;
+    
+    
   
 
 }
@@ -69,7 +86,7 @@ body{
 
 .card-list .card-link .name {
 
-    color:  #52221F;
+    color:  #52221F ;
     padding: 8px 16px;
     margin: 10px 0 15px;
     font-size: 1.5rem;
