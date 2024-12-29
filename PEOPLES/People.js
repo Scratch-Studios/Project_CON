@@ -2,7 +2,7 @@ const swiper = new Swiper('.slider-wrapper', {
    
     loop: true,
     grabCursor:true,
-    spaceBetween: 30,
+    spaceBetween: 25,
   
     // If we need pagination
     pagination: {
