@@ -1,18 +1,22 @@
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 body{
    
-    height: 100vh;
-  
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
     background: linear-gradient( to right, #E9D4A3, rgb(218, 163, 61));
-    padding:  0 35px;
+   
 
     
 }
-
 
 #btn1{
    
@@ -23,7 +27,7 @@ body{
     border-color: #E9D4A3;
     font-weight: bold;
     border-radius: 20px;
-    margin: 50px 0px 20px  1120px ;
+    margin: 30px 0px 20px  1100px ;
     color: #E9D4A3 ;
     background-color: #2F191B;
  }
@@ -34,44 +38,44 @@ body{
      cursor: pointer;
      
  
+ } 
+
+ .slider-wrapper{
+    overflow: hidden;
+    max-width: 1150px;
+    margin: 0 70px 55px;
+  
+   
  }
 
-.card-list .card-item{
-    list-style: none;
-    margin: 0 0 50px 0;
-   
-}
-
- .card-wrapper .card-list {
+ .card-list .card-item{
     
-    display: grid;
-    grid-auto-flow: column;
-    gap: 30px;
-    margin-top: 50px;
     
-}
-.card-list .card-item .card-link{
-    width: 300px;
-    display: block;
-    background-color:#2F191B   ;
-    padding: 20px;
-    border-radius: 15px;
-    text-decoration: none;
   
-
-}
-
-
-.card-list .card-link .card-image {
-    width: 140px;
-    height: 140px;
-   object-fit: cover;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+   
+    border-radius: 15px;
+    background-color: #2F191B;
+ 
+     
+ }
+ .card-list .card-item .card-image{
+ 
+    width: 180px;
+    height: 180px;
+    margin-left: 60px;
     border-radius: 50%;
-   margin: 20px 50px;
-   border: 3px solid #E9D4A3 ;
-}
-.card-list .card-link .name {
+    margin-bottom: 30px;
+    border: 2px solid #E9D4A3 ;
+    padding: 4px;
+ } 
 
+
+
+.card-list .card-item .name {
+   
     color:  #2F191B;
     padding: 8px 16px;
     margin: 10px 0 15px;
@@ -82,13 +86,13 @@ body{
     text-align: center;
    
 }
-.role{
+.card-list .card-item .role{
     
     color: #2F191B ;
     padding: 8px 16px;
     margin: 10px 0 15px;
     font-size: 1.5rem;
-    font-weight: 40;
+    font-weight: 50;
     background-color: #E9D4A3;
     border-radius: 50px;
     text-align: center;
@@ -96,13 +100,13 @@ body{
 
 }
 
-.dept{
+.card-list .card-item .dept{
 
      
     color:  #2F191B;
     padding: 8px 16px;
     margin: 10px 0 15px;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: 50;
     background-color:#E9D4A3;
     border-radius: 50px;
@@ -111,14 +115,43 @@ body{
 
 }
 
-.card-list .card-link:hover{
-    /* transform: translateY(-5px);
-    transition: 0.3s ease;
-    box-shadow:  2px 3px #2e060a; */
+.card-list .card-item:hover{
+   
 
     box-shadow: 3px 4px 4px #8f3029;
     transform: translateY(-2px);
     cursor: pointer;
     
 }
+  
+.slider-wrapper .swiper-pagination-bullet{
+    background: #2F191B;
+    height: 15px;
+    width: 15px;
+    color: #8f3029;
+   
+}
+.slider-wrapper .swiper-pagination-bullet-active {
+    opacity: 1;
+  }
 
+.slider-wrapper .swiper-slide-button{
+    color: #2F191B;
+    margin-top: -10px;
+    transition: 0.2s ;
+
+}
+
+.slider-wrapper .swiper-slide-button:hover{
+    color: #8f3029;
+}
+
+@media  (max-width: 768px ) {
+    .slider-wrapper{
+        margin: 0 10px 40px;
+    }
+    .slider-wrapper .swiper-slide-button{
+        display: none;
+    }
+
+}

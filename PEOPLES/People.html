@@ -3,98 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- linking google fonts and icons  -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_forward" />
-    <title>Peoples</title>
+        <title>Peoples</title>
+    <!-- linking swiperjs css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="People.css">
 </head>
 <body>
-    <div class="container">
+    <div class="swiper">
 
         <button type="button" id="btn1">View all</button>
         
-        <div class="card-wrapper">
-            <ul class="card-list">
-                <li class="card-item">
-                    <a href="#" class="card-link">
+        <div class="slider-wrapper">
+            <div class="card-list swiper-wrapper">
+                <div class="card-item  swiper-slide ">
+                  
                         <img src="Developer.jpg" alt="image" class="card-image">
                         <p class="name">Nandhini</p>
                         <p class="role">Developer</p>
                         <p class="dept">Programming</p> 
-                    </a>
-                </li>
-
-                <li class="card-item">
-                    <a href="#" class="card-link">
+                    
+                </div>
+ 
+                <div class="card-item  swiper-slide">
+                    
                         <img src="Research.jpg" alt="card image" class="card-image">
                         <p class="name">Vignesh</p>
                         <p class="role">Researcher</p>
                         <p class="dept">Research</p> 
-                    </a>
-                </li>
+                    
+                </div>
 
-                <li class="card-item">
-                    <a href="#" class="card-link">
+                <div class="card-item  swiper-slide">
+                   
                         <img src="Designer.jpg" alt="card image" class="card-image">
                         <p class="name">Sarfaraz shareef</p>
                         <p class="role">Designer</p>
                         <p class="dept">Designing</p> 
-                    </a>
-                </li>
+                    
+                </div>
 
-                <li class="card-item">
-                    <a href="#" class="card-link">
+                <div class="card-item  swiper-slide">
+                    
                         <img src="Developer.jpg" alt="card image" class="card-image">
                         <p class="name">Mohammed Adhil</p>
                         <p class="role">Developer</p>
                         <p class="dept">Programming</p> 
-                    </a>
-                </li>
-            </ul>
+                    
+                </div>
 
-            <ul class="card-list">
-            <li class="card-item">
-                <a href="#" class="card-link">
-                    <img src="Developer.jpg" alt="card image" class="card-image">
-                    <p class="name">Naveen</p>
-                    <p class="role">Developer</p>
-                    <p class="dept">Programming</p> 
-                </a>
-            </li>
+                
+              </div> 
 
-            
-            <li class="card-item">
-                <a href="#" class="card-link">
-                    <img src="Research.jpg" alt="card image" class="card-image">
-                    <p class="name">Muthuraman</p>
-                    <p class="role">Researcher</p>
-                    <p class="dept">Research</p> 
-                </a>
-            </li>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-slide-button swiper-button-prev"></div>
+                <div class="swiper-slide-button swiper-button-next"></div>
 
-            
-            <li class="card-item">
-                <a href="#" class="card-link">
-                    <img src="Research.jpg" alt="card image" class="card-image">
-                    <p class="name">Unknown</p>
-                    <p class="role">null</p>
-                    <p class="dept">null</p> 
-                </a>
-            </li>
-
-
-            <li class="card-item">
-                <a href="#" class="card-link">
-                    <img src="Developer.jpg" alt="card image" class="card-image">
-                    <p class="name">Priyanka</p>
-                    <p class="role">Developer</p>
-                    <p class="dept">Programming</p> 
-                </a>
-            </li>
-        </ul>
-        </div>
+        </div>     
     </div>
 
+    <!-- linking swiperJS Script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
+    <!-- linking js -->
+    <script src="People.js"></script>
 </body>
 </html>
