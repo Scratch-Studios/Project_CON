@@ -1,6 +1,6 @@
 const swiper = new Swiper('.slider-wrapper', {
    
-    loop: true,
+    loop: false,
     grabCursor:true,
     spaceBetween: 25,
   
