@@ -1,0 +1,134 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.container {
+    width: 80%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+  .header-content {
+    text-align: center;
+  }
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header-content img {
+    max-width: 50%;
+    height: auto;
+  }
+  @media (max-width: 768px) {
+    .header-content {
+      flex-direction: column; 
+      text-align: center; 
+    }
+    .header-content img {
+      max-width: 80%;
+      margin-top: 20px; 
+    }
+  }
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 2rem; 
+    }
+  
+    p {
+      font-size: 1.2rem; 
+    }
+  }
+  #i1{
+    width: 250px;
+    height: 200px;
+    border-radius: 50%;
+    float: left;
+    margin-left: 0px;
+}
+
+h1{
+    color:#E8D4A3;
+    padding-top: 20px;
+    text-align: center;
+    letter-spacing: 5px;
+    margin-right: 10px;
+}
+header{
+    background-color:#2F191B;
+}
+.navbar {
+    position: relative; 
+    background-color: #fff; 
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    display: flex; 
+    justify-content: space-between; 
+  }
+  
+  .navbar li {
+    margin: 0 15px;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: #E8D4A3; 
+  }
+  .navbar{
+    background-color: #52221F;
+  }
+  
+  @media (max-width: 768px) { 
+    .navbar ul {
+      flex-direction: column; 
+      text-align: center;
+    }
+  
+    .navbar li {
+      margin: 10px 0;
+    }
+  }
+  
+  .navbar.sticky {
+    position: fixed;
+    top: 0;
+    width:100%;
+  }
+  .navbar a.active {
+    color: #007bff; 
+  }
+  #homepage{
+    display: inline-block;
+}
+#adu{
+    display: inline-block;
+    float:left;
+    width: 40%;
+}
+#adu img{
+    display: inline-block;
+    height: 250px;
+    border-radius: 50%;
+    height: 500px;
+    width: 100%;
+    margin-top: 20px;
+}
+#adz{
+    display: inline-block;
+    margin-left: 10px;
+    width: 55%;
+    margin-top: 20px;
+    font-family: 'Times New Roman';
+    text-align: justify;
+}
+#HOME{
+    background-color:sandybrown ;
+}
+
