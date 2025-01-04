@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" href="homepage.css">
-
+  <link rel="stylesheet" href="newhome.css">
+  <script src="homepage.js"></script>
 </head>
 <body>
 <header>
@@ -38,6 +38,57 @@
 <section id="GOALS"></section>
 <section id="CONTACT"></section>
 </div>
+<div>
+  <!DOCTYPE html>
+<html>
+<head>
+  <title>Scroll to Top</title>
+  <style>
+    #homepage{
+      height: 1000px;
+    }
+
+    .scroll-top-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      display: none; 
+    }
+  </style>
+</head>
+<body>
+  <div id="homepage">
+
+  <button class="scroll-top-btn">Back to Top</button>
+</div>
+
+  <script>
+    const scrollToTopBtn = document.querySelector('.scroll-top-btn');
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 300) { 
+        scrollToTopBtn.style.display = 'block';
+      } else {
+        scrollToTopBtn.style.display = 'none';
+      }
+    });
+
+    scrollToTopBtn.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth' 
+      });
+    });
+  </script>
+
 </body>
 </html>
+</div>
+</body>
 </html>
