@@ -1,8 +1,10 @@
+
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "outfit";
+   
 }
 
 body{
@@ -28,11 +30,11 @@ body{
     align-items: start;
     flex-direction: column;
     gap: 20px;
-    background:rgba(255, 255, 255, 0.1);
+    background:rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(10px);
     padding: 40px;
     border-radius: 20px;
-    border: 1px solid white;
+    border: 1px solid gray;
   
     
     
@@ -41,7 +43,7 @@ body{
 
 .contact-left-title h1{
     font-weight: 600;
-    color: #000;;
+    color:wheat;
     font-size:40px;
     margin-bottom:2px;
 }
@@ -49,7 +51,7 @@ body{
     border: none;
     width: 120px;
     height: 5px;
-    background-color:#000;
+    background-color:wheat;
     border-radius: 5px;
     margin-bottom: 20px;
 
@@ -58,13 +60,13 @@ body{
 .contact-input{
     height: 50px;
     width: 320px;
-    border: none;
-    outline: none;
+   
+   
     padding-left:25px  ;
     border-radius: 50px;
     font-weight: 500;
     background: transparent;
-    border: 1px solid white;
+    border: 1px solid gray;
     color: white;
 }
 
@@ -82,22 +84,22 @@ body{
     color: whitesmoke;
 }
 
-.contact-left button{
-    padding: 15px 30px;
+.contact-left .submit{
+    padding: 10px 25px;
     border-radius: 50px;
     display: flex;
     align-items: center;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 500;
     color: wheat;
     border: 1px solid white;
-    gap: 10px;
+   
     background: rgba(255, 255, 255, 0.1);
     
 }
-.contact-left button:hover{
+.contact-left .submit:hover{
     cursor: pointer;
-    background-color: white;
+    
     color: black;
 }
 
