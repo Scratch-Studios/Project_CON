@@ -48,9 +48,10 @@ nav ul li a{
     font-size: 20px;
     font-weight: 500;
     text-transform: capitalize;
-    padding: 7px 5px;
+    padding: 7px 25px;
     border-radius: 20px ;
     text-decoration: none;
+    
     
     
 }
