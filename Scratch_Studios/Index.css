@@ -6,7 +6,7 @@
 }
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-;
+    background: linear-gradient(purple);
 }
 nav{
     height: 80px;
@@ -15,8 +15,6 @@ nav{
     background: linear-gradient(purple,blue,purple)
 
 }
-
-
 label img{
   
   
@@ -24,13 +22,8 @@ label img{
     align-items: center;
     justify-content: center;
     
-    margin: 5px 5px;
-  
-    
-    
-    
-}
-
+    margin: 5px 5px;   
+} 
 nav ul{
     float: right;
     margin-right: 20px;
@@ -48,16 +41,33 @@ nav ul li a{
     font-size: 20px;
     font-weight: 500;
     text-transform: capitalize;
-    padding: 7px 25px;
-    border-radius: 20px ;
+    padding: 5px 16px;
+
     text-decoration: none;
-    
-    
-    
+  
 }
-a:hover{
-    
-    transition: 0.5s;
+
+.fa-house{
+    margin-right: 3px;
+}
+.fa-user{
+    margin-right: 5px;
+}
+.fa-gear{
+    margin-right: 5px;
+}
+.fa-chart-simple{
+    margin-right:1px
+}
+.fa-address-card{
+    margin-right: 5px;
+}
+nav ul li a:hover{
+    padding: 6px 16px;
+    background-color: blueviolet;
+    transition: 0.3s;
+    border-radius: 20px;
+    color: black;
 }
 
 .checkbtn{
@@ -82,7 +92,7 @@ a:hover{
         padding: 5px;
     }
     nav ul li a{
-        font-size: 20px;
+        font-size: 10px;
         
     }
 }
@@ -96,7 +106,6 @@ a:hover{
         width: 100%;
         height: auto;
         background:plum;
-        
         top: 80px;
         left: -100%;
         text-align: center;
@@ -107,13 +116,15 @@ a:hover{
     nav ul li{
         display: block;
         margin: 50px 0;
-        line-height: 20px;
+        line-height: 10px;
+       
         
     }
     nav ul li a{
-        font-size: 30px;
+        font-size: 20px;
+        color: black;
     }
-    a:hover{
+    nav ul li a:hover{
         background: none;
         color: brown;
         
