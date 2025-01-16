@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    color: #333;
+    overflow-x: hidden;
+}
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    animation: fadeIn 2s ease-in-out;
+}
+.logo-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: slideInLeft 2s ease-in-out;
+}
+
+.logo {
+    max-width: 200px;
+    border-radius: 50%;
+}
+
+.content-container {
+    flex: 2;
+    animation: slideInRight 2s ease-in-out;
+}
+
+.content-heading {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.content-description {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.team-container {
+    text-align: center;
+    padding: 50px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    margin: 20px;
+}
+.team-heading {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+.team-members {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    text-align: center;
+    width: 150px;
+}
+
+.team-photo {
+    width: 100%;
+    border-radius: 50%;
+    border: 2px solid #ff7e5f;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.member-name {
+    font-size: 16px;
+    margin: 10px 0 5px;
+}
+.member-role {
+    font-size: 14px;
+    color: #555;
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+    }
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .content-container {
+        margin-top: 20px;
+    }
+
+    .team-members {
+        flex-direction: column;
+    }
+
+}
