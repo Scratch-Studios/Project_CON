@@ -1,71 +1,151 @@
+#{
+    margin: auto;
 
-.pro{
-    border: 3px solid black;
-    width: 800px;
-    align-items: center;
-    margin-left: 300px;
+}
+#outbox{
+    border-radius: 0%;
+    border: 3px solid whitesmoke;
+    width: 900px;
+    height: 110px;
+    gap: 4px;
+    
+    margin: 60px;
+    margin-left: 250px;
+    margin-top: 0px;
+    border-radius: 10px;
+    color: aliceblue;
+    background-color: black;
+
+
+}
+#card{
+    border-radius: 0%;
+    border: 3px solid whitesmoke;
+    width:920px;
+    margin-top: 13px;
+    margin-left: 70px;
+    height: 90px;
+    border-radius: 50px;
+    position: relative;
+    color: aliceblue;
+
+}
+body{
+background-color: FEF8DD;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
     margin-top: 200px;
-    height: 100px;
-    position: relative;
 }
-.card{
-    position:absolute ;
-    border: 3px solid black;
+#inerbox p{
+    border: 3px solid whitesmoke;
+    margin-top: -96px;
     width: 750px;
-    margin-top: 13px;
-    margin-left: 25px;
-    height: 70px;
-    border-radius: 80px;
-    position: relative;
+    height: 65px;
+    margin-left: 120px;
+    border-radius: 20px;
+    color: aliceblue;
+
+    
 }
-.card h1{
-    border: 2px solid black;
-    width: 60px;
-    height: 60px;
-    border-radius: 180px;
-    margin-top: 3px;
-    margin-left: 15px;
-}
-.card p{
-border: 3px solid black;
-position: absolute;
-margin-top: -80px;
-margin-left:90px;
-width: 630px;
-height: 50px;
-}
-.pr{
+h1{
+    width: 50px;
+    height: 40px;
     border: 3px solid black;
-    width: 800px;
-    align-items: center;
-    margin-left: 300px;
-    margin-top: 100px;
-    height: 100px;
-    position: relative;
+    margin-top: 70px;
+    position: absolute;
+    margin-left: 20px;
+    border-radius: 60px;
+
 }
-.car{
-    position:absolute ;
-    border: 3px solid black;
-    width: 750px;
-    margin-top: 13px;
-    margin-left: 25px;
+img{
+    width: 70px;
     height: 70px;
-    border-radius: 80px;
-    position: relative;
+    margin-left: 30px;
+    margin-top: -2px;
+    position: absolute;
 }
-.car h2{
-    border: 2px solid black;
-    width: 60px;
-    height: 60px;
-    border-radius: 180px;
-    margin-top: 3px;
-    margin-left: 15px;
-}
-.car h3{
-border: 3px solid black;
-position: absolute;
-margin-top: -80px;
-margin-left:90px;
-width: 630px;
-height: 50px;
-}
+
+
+
+   
+    #outbox{
+        width: 1020px;
+        height: 120px
+        
+
+    }
+    #inerbox{
+        width: 230px;
+        height: 50px;
+        margin-left: 75px;
+        margin-top: 13px;
+        
+        
+    }
+    #inerbox-right{
+        width: 230px;
+        height: 50px;
+        margin-left: 10px;
+        margin-top: 13px;
+        
+    }
+    h1{
+        font-size: 20px;
+        margin-top: 6px;
+    }
+    #icon-left{
+        width: 55px;
+        
+    }
+    #icon-right{
+        width: 55px;
+        
+    }
+    .title{
+        width: 300px;
+        height: 50px;
+        font-weight: 500rem;
+        border: 10px ridge black;
+        color:aliceblue;
+        margin-left: 650px;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+
+        
+      
+    }
+    .card{
+        border: 3px solid b;
+    }
+    @keyframes slideInFromRight {
+        from {
+            transform: translateX(100%);
+            opacity: 0;
+        }
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+    
+    @keyframes slideInFromLeft {
+        from {
+            transform: translateX(-100%);
+            opacity: 0;
+        }
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+    
+    #outbox:nth-child(odd) {
+        animation: slideInFromLeft 3s ease forwards;
+    }
+    
+    #outbox:nth-child(even) {
+        animation: slideInFromRight 3s ease forwards;
+    }
