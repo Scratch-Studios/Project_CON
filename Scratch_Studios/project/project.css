@@ -1,0 +1,151 @@
+#{
+    margin: auto;
+
+}
+#outbox{
+    border-radius: 0%;
+    border: 3px solid whitesmoke;
+    width: 900px;
+    height: 110px;
+    gap: 4px;
+    
+    margin: 60px;
+    margin-left: 250px;
+    margin-top: 0px;
+    border-radius: 10px;
+    color: aliceblue;
+    background-color: black;
+
+
+}
+#card{
+    border-radius: 0%;
+    border: 3px solid whitesmoke;
+    width:920px;
+    margin-top: 13px;
+    margin-left: 70px;
+    height: 90px;
+    border-radius: 50px;
+    position: relative;
+    color: aliceblue;
+
+}
+body{
+background-color: FEF8DD;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+    margin-top: 200px;
+}
+#inerbox p{
+    border: 3px solid whitesmoke;
+    margin-top: -96px;
+    width: 750px;
+    height: 65px;
+    margin-left: 120px;
+    border-radius: 20px;
+    color: aliceblue;
+
+    
+}
+h1{
+    width: 50px;
+    height: 40px;
+    border: 3px solid black;
+    margin-top: 70px;
+    position: absolute;
+    margin-left: 20px;
+    border-radius: 60px;
+
+}
+img{
+    width: 70px;
+    height: 70px;
+    margin-left: 30px;
+    margin-top: -2px;
+    position: absolute;
+}
+
+
+
+   
+    #outbox{
+        width: 1020px;
+        height: 120px
+        
+
+    }
+    #inerbox{
+        width: 230px;
+        height: 50px;
+        margin-left: 75px;
+        margin-top: 13px;
+        
+        
+    }
+    #inerbox-right{
+        width: 230px;
+        height: 50px;
+        margin-left: 10px;
+        margin-top: 13px;
+        
+    }
+    h1{
+        font-size: 20px;
+        margin-top: 6px;
+    }
+    #icon-left{
+        width: 55px;
+        
+    }
+    #icon-right{
+        width: 55px;
+        
+    }
+    .title{
+        width: 300px;
+        height: 50px;
+        font-weight: 500rem;
+        border: 10px ridge black;
+        color:aliceblue;
+        margin-left: 650px;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+
+        
+      
+    }
+    .card{
+        border: 3px solid b;
+    }
+    @keyframes slideInFromRight {
+        from {
+            transform: translateX(100%);
+            opacity: 0;
+        }
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+    
+    @keyframes slideInFromLeft {
+        from {
+            transform: translateX(-100%);
+            opacity: 0;
+        }
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+    
+    #outbox:nth-child(odd) {
+        animation: slideInFromLeft 3s ease forwards;
+    }
+    
+    #outbox:nth-child(even) {
+        animation: slideInFromRight 3s ease forwards;
+    }
