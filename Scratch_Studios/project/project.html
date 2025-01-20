@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,43 +9,62 @@
 <body>
     <section id="project">
         <div class="container">
-
-            
             <div id="outbox">
-              <div id ="card">
-
-              </div>
+                <div id="card"></div>
                 <div id="inerbox">
-             <img src="logo.png">
+                    <img src="logo.png" alt="Logo">
                     <p></p>
                 </div>
             </div>
 
-          
-            </div>
-
             <div id="outbox">
-                <div id ="card">
-                
-                </div>
-            
+                <div id="card"></div>
                 <div id="inerbox">
-                    <img src="logo.png">
+                    <img src="logo.png" alt="Logo">
                     <p></p>
                 </div>
             </div>
 
-            
-
-
-
+           
         </div>
     </section>
-</body>
-</html>
 
+    <script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const outboxes = document.querySelectorAll("#outbox");
+    let delay = 1000; // Initial delay before the first animation
 
-    </div>
-</section>
+    // Function to apply animation and restart the cycle
+    function slideIn() {
+        // Loop through each outbox element
+        outboxes.forEach((outbox, index) => {
+            setTimeout(() => {
+                // Apply different animation based on the index (odd or even)
+                if (index % 2 === 0) {
+                    outbox.style.animation = "slideInFromLeft 4s ease forwards";
+                } else {
+                    outbox.style.animation = "slideInFromRight 4s ease forwards";
+                }
+                outbox.style.opacity = 1; // Make the element visible when the animation starts
+            }, delay);
+            delay += 4000; // Delay of 4 seconds for each box animation (this includes the animation duration)
+        });
+
+        // Once all outboxes have been animated, restart the animation loop
+        setTimeout(() => {
+            // Reset animations for all outboxes and set opacity to 0
+            outboxes.forEach(outbox => {
+                outbox.style.animation = ''; // Clear the animation
+                outbox.style.opacity = 0; // Reset opacity to 0
+            });
+            delay = 1000; // Reset delay for the next round of animations
+            slideIn(); // Restart the loop
+        }, delay + 1000); // Wait for all animations to finish before resetting and restarting
+    }
+
+    slideIn(); // Start the animation loop
+});
+
+    </script>
 </body>
 </html>
