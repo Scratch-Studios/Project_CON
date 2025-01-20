@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.Home{
+    display: flex;
+    padding: 50px;
+    align-items: center;
+    justify-content: center;
+    gap:50px;
+   
+  }
+  .content-left .logo {
+   margin-top: 50px;
+    width: 450px; 
+    height: 450px ;
+     
+      background-color: white; /* Ensure logo visibility */
+      
+      box-shadow: 
+          -10px -10px 20px rgba(0, 0, 0, 0.1), /* Top-left shadow */
+          10px 10px 20px rgba(0, 0, 0, 0.2);  /* Bottom-right shadow */
+  
+    
+  }
+ 
+  .content-right {
+    flex-grow: 1; 
+    overflow-y: auto;
+    font-size: 18px; 
+    line-height: 1.7; 
+}
+
+.content-right p {
+    margin-top:  20px; 
+    text-align: justify;
+}
