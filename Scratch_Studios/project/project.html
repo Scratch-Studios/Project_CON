@@ -41,13 +41,13 @@
             setTimeout(() => {
                 // Apply different animation based on the index (odd or even)
                 if (index % 2 === 0) {
-                    outbox.style.animation = "slideInFromLeft 4s ease forwards";
+                    outbox.style.animation = "slideInFromRight 4s ease forwards";
                 } else {
                     outbox.style.animation = "slideInFromRight 4s ease forwards";
                 }
                 outbox.style.opacity = 1; // Make the element visible when the animation starts
             }, delay);
-            delay += 4000; // Delay of 4 seconds for each box animation (this includes the animation duration)
+            delay += 7000; // Delay of 4 seconds for each box animation (this includes the animation duration)
         });
 
         // Once all outboxes have been animated, restart the animation loop
