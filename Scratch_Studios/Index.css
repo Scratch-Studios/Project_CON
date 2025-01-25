@@ -15,12 +15,10 @@ nav{
     position: fixed; 
     top:10px; 
     left: 35px; 
-   border-radius: 30px;
-    box-shadow: 2px 2px 10px 10px #5c83c4;
+    border-radius: 30px;
+    box-shadow: 2px 2px 2px 2px #5c83c4;
     height: 80px;
     width: 95%;
-    /* background: linear-gradient(#11224e,#2c599d,#11224e)
-    */
     z-index: 1000;
     background:rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(20px);
@@ -103,139 +101,70 @@ nav ul li a:hover::after{
 
 }
 
-/* responsive nav */
-@media(max-width:850px){
-
-    nav{
-        left: 10px;
-        border-radius: 20px;
-    }
-    label img{ 
-        width: 180px;
-        margin: -8px;
-        
-    }
-    nav ul li a{
-        font-size: 10px;
-        
-    }
-
-    .checkbtn{
-        display: block;
-
-    }
-    ul{
-        position: fixed;
-        width: 50%;
-        height: auto;
-        background:#11224e;
-        top: 80px;
-        left: -100%;
-        text-align: center;
-        transition: all .3s;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-   
-    }
-    nav ul li{
-        display: block;
-        margin: 50px 0;
-        line-height: 10px;
-       
-        
-    }
-    nav ul li a{
-        font-size: 20px;
-        color: black;
-    }
-   
-    #check:checked~ul{
-        left: 0;
-
-    }
-}
-
-
 /* css for home */
 .Home{
+    height: 500px;
+    width: 1100px;
     display: flex;
     padding: 70px;
     align-items: center;
     justify-content: center;
-    gap:50px;
-    margin-top: 50px;
-   
-  }
-  .content-left .logo {
-   margin-top: 50px;
-    width: 400px; 
-    height: 400px ;
-   
-  }
- 
-  .content-right {
-    margin-top: 50px;
-    flex-grow: 1; 
-    line-height:1.5; 
-    padding: 20px;
-    
-    border-radius: 20px;
+    gap:70px;
+    margin-top: 150px;
+    margin-left: 125px;
     box-shadow: 2px 2px 2px 1px #5c83c4;
     background:rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(20px);
-}
+    padding: 60px;
+    border-radius: 20px;
+    
+  }
+  .content-left .logo {
+   
+    width: 350px; 
+    height: 350px ;
 
+  }
+ 
+  .content-right {
+  
+    flex-grow: 1; 
+    line-height:1.5; 
+}
 .content-right p {
     margin-top:  10px; 
     text-align: justify;
     font-size: 20px;
     color: white;
 }
-/* responsive for home */
-@media (max-width: 768px) {
-    .Home {
-        margin-top: 80px;
-        padding: 35px;
-        flex-direction: column; /* Stack content vertically */
-        align-items: center;
-        gap: 10px; /* Adjust gap for vertical layout */
-    }
 
-    .content-left .logo {
-        margin-top: 0;
-        width: 200px;
-        height: 200px; /* Further reduce logo size */
-    }
-
-    .content-right {
-        font-size: 5px; /* Smaller font for mobile devices */
-        
-          
-    }
-}
 /* css for services */
- #services {
+#services {
   
     display: flex; 
     flex-direction: column; 
     align-items: center;
     padding: 50px;
     box-sizing: border-box; 
+     background:rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(30px);
+    border: 1px solid #5c83c4;
+    border-radius: 20px;
+    height: auto;
+    width: 1100px;
+    margin: 150px 120px 0 125px;
+    box-shadow: 2px 2px 2px 2px #5c83c4; 
+   
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.container{
-    padding:50px;
-    
-    
-   
-}
 
-.container .title{
+#services .title{
     height: 80px;
     width: 700px;
     
-    background:rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(30px);
+    /* background:rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(30px); */
     margin-bottom: 100px;
    
     margin-left: auto; /* Center horizontally */
@@ -248,7 +177,7 @@ nav ul li a:hover::after{
     align-items: center; /* Center vertically */
     justify-content: center; 
 }
-.container .title h2{
+#services .title h2{
     font-size: 30px;
     text-transform: capitalize;
     font-weight: 1000rem;
@@ -257,15 +186,15 @@ nav ul li a:hover::after{
     
 }
 
-#outerbox{
-    margin-bottom: 40px;
+#services #outerbox{
+    margin-bottom: 30px;
 }
-#icon-left{
+#services #icon-left{
     width: 60px;
    
     float: left;
 }
-#innerbox{
+#services #innerbox{
     height: 65px;
     width: 720px;
     background:rgba(255, 255, 255, 0.1);
@@ -278,11 +207,11 @@ nav ul li a:hover::after{
 }
 
 
-#icon-right{
+#services #icon-right{
     width: 60px;
     float: right;
 }
-#innerbox-right{
+#services #innerbox-right{
     height: 65px;
     width: 720px;
     background:rgba(255, 255, 255, 0.1);
@@ -292,7 +221,7 @@ nav ul li a:hover::after{
     border-radius: 50px;
     border: 1px solid #5c83c4;
 }
-h1{
+#services h1{
     color: white;
     font-size: 30px;
     font-style: oblique;
@@ -300,66 +229,3 @@ h1{
     margin-top: 10px;
     
 }
- /* responsive for service  */
-@media(max-width:850px){
-
-    .container .title{
-        width: 340px;
-        
-    }
-   .container .title h2{
-
-        font-size: 22px;
-        color: white;
-   }
-   #innerbox{
-    width: 250px;
-    
-   }
-   #innerbox-right{
-    width: 250px;
-    
-   }
-   h1{
-    font-size: 20px;
-    margin-top: 15px;
-   }
-   #icon-right{
-    width: 50px;
-   }
-   #icon-left{
-    width: 50px;
-   }
-
-}
- /* animation for service  */
-@keyframes slideInFromRight {
-    from {
-        transform: translateX(100%);
-        opacity: 0;
-    }
-    to {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-@keyframes slideInFromLeft {
-    from {
-        transform: translateX(-100%);
-        opacity: 0;
-    }
-    to {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-#outerbox:nth-child(odd) {
-    animation: slideInFromLeft 3s ease forwards;
-}
-
-#outerbox:nth-child(even) {
-    animation: slideInFromRight 3s ease forwards;
-} 
-
