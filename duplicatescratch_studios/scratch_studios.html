@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCRATCH STUDIOS</title>
+    <link rel="stylesheet" href="duplicatescratch_studios/scratch_studios.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+ 
+</head>
+<body>
+    <header>
+    <nav>
+        <input type="checkbox" id="check">
+
+        <label for="check" class="checkbtn">
+            <i class="fa-solid fa-list"></i>
+        </label>
+        
+        <label><img src="logo-white.png" alt="logo" ></label>
+        <ul>
+            <li><a href="#Home"><i class="fa-solid fa-house"></i>Home</a></li>
+            <li><a href="#services"><i class="fa-solid fa-gear"></i>services</a></li>
+            <li><a href="#Projects"><i class="fa-solid fa-chart-simple"></i> Projects</a></li>
+            <li><a href="#About"><i class="fa-solid fa-address-card"></i>About </a></li>
+            <li><a href="#Contact"><i class="fa-solid fa-user"></i>Contact</a></li>    
+        </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="Home">
+                
+    <div class="Home">
+
+        <div class="content-left">
+            <img src="logo.png" alt="" class="main-logo ">
+        </div>
+
+        <div class="content-right">
+           <h2> Welcome to Scratch Studios!</h2>
+            <p>    At Scratch Studios, we believe in starting from the ground up,
+                turning fresh ideas into powerful digital solu􀆟ons. Our focus is
+                on delivering crea􀆟vity, innovation, and dynamic experiences
+                tailored to today's needs. Most importantly, we care about our
+                clients' sa􀆟sfac􀆟on and success more than just making a profit.
+                Let's build something amazing together—from scratch! </p>
+        </div>
+    </div>
+
+
+    </section>
+
+    <section id="services">
+        
+            <div class="title">
+                <h2>Our services and Products</h2>
+            </div>
+            <div id="outerbox">
+                <img src="WEB DESIGN ICON.png" alt="" id="icon-left">
+                <div id="innerbox">
+                    <h1>Web Design</h1>
+                </div>
+            </div>
+
+            <div id="outerbox">
+                <img src="BRANDDESIGN ICON.png" alt="" id="icon-right">
+                <div id="innerbox-right">
+                    <h1>Brand Design</h1>
+                </div>
+            </div>
+
+            <div id="outerbox">
+                <img src="CONTENT WRITING ICON.png" alt="" id="icon-left">
+                <div id="innerbox">
+                    <h1>Content Writing</h1>
+                </div>
+            </div>
+
+            <div id="outerbox">
+                <img src="DIGITALMARKETING ICON.png" alt="" id="icon-right">
+                <div id="innerbox-right">
+                    <h1>Digital Marketing</div>
+                    </div></h1>
+
+            <div id="outerbox">
+                <img src="PRINT DESIGN ICON.png" alt="" id="icon-left">
+                <div id="innerbox">
+                    <h1>Print Design</h1>
+                </div>
+            </div>
+
+            <div id="outerbox">
+                <img src="GAME DEVELOPMENT ICON.png" alt="" id="icon-right">
+                <div id="innerbox-right">
+                    <h1>Game Development</h1>
+                </div>
+            </div>
+
+        </div> 
+
+    </section>
+
+    <section id="Projects">
+      
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="na.css">
+</head>
+<body>
+    <section id="project">
+        <div class="container">
+
+
+            <div id="outbox">
+                <div id ="card">
+                
+                </div>
+            
+                <div id="inerbox">
+                    <img src="logo.png">
+                    <p></p>
+                </div>
+            </div>
+
+            
+
+
+
+        </div>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+              const outboxes = document.querySelectorAll("#outbox");
+              let delay = 1000; // Initial delay before the first animation
+          
+              // Function to apply animation and restart the cycle
+              function slideIn() {
+                  // Loop through each outbox element
+                  outboxes.forEach((outbox, index) => {
+                      setTimeout(() => {
+                          // Apply different animation based on the index (odd or even)
+                          if (index % 2 === 0) {
+                              outbox.style.animation = "slideInFromRight 4s ease forwards";
+                          } else {
+                              outbox.style.animation = "slideInFromLeft 4s ease forwards";
+                          }
+                          outbox.style.opacity = 1; // Make the element visible when the animation starts
+                      }, delay);
+                      delay += 7000; // Delay of 4 seconds for each box animation (this includes the animation duration)
+                  });
+          
+                  // Once all outboxes have been animated, restart the animation loop
+                  setTimeout(() => {
+                      // Reset animations for all outboxes and set opacity to 0
+                      outboxes.forEach(outbox => {
+                          outbox.style.animation = ''; // Clear the animation
+                          outbox.style.opacity = 0; // Reset opacity to 0
+                      });
+                      delay = 1000; // Reset delay for the next round of animations
+                      slideIn(); // Restart the loop
+                  }, delay + 1000); // Wait for all animations to finish before resetting and restarting
+              }
+          
+              slideIn(); // Start the animation loop
+          });
+          
+              </script>
+    </section>
+
+ 
+
+    </script>
+</body>
+</html>
+
+
+    </div>
+</section>
+</body>
+</html>
+    </section>
+
+ 
+
+    </script>
+    </div>
+</section>
+
+    <section id="About">
+            <!-- About Section -->
+            <div class="about-container">
+                <!-- Left Side Logo -->
+                <div class="logo-container">
+                    <img src="Logo-white.png" alt="Company Logo" class="logo">
+                </div>
+                <!-- Right Side Content with Image -->
+                <div class="content-container">
+                    <h1 class="content-heading">Welcome to Our Company</h1>
+                    <p class="content-description"></p>
+                    <img src="PicsArt_01-17-05.02.54.png" alt="Our Team" class="content-image">
+                </div>
+            </div>
+        
+            <!-- Team Section -->
+            <div class="team-container">
+                <h2 class="team-heading">Our Team</h2>
+                <div class="team-members">
+                    <!-- Team Member -->
+                    <div class="team-member">
+                        <img src="photo_2025-01-06_22-43-40.jpg" alt="Team Member 1" class="team-photo">
+                        <h3 class="member-name">adhl</h3>
+                        <p class="member-role">Software Engineer</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="photo_2025-01-06_22-43-40.jpg" alt="Team Member 2" class="team-photo">
+                        <h3 class="member-name">adhl</h3>
+                        <p class="member-role">Software Engineer</p>
+                    </div>
+                    <!-- Add more team members as needed -->
+                    <div class="team-member">
+                        <img src="photo_2025-01-06_22-43-40.jpg" alt="Team Member 3" class="team-photo">
+                        <h3 class="member-name">adhl</h3>
+                        <p class="member-role">Software Engineer</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="photo_2025-01-06_22-43-40.jpg" alt="Team Member 4" class="team-photo">
+                        <h3 class="member-name">adhl</h3>
+                        <p class="member-role">Software Engineer</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="photo_2025-01-06_22-43-40.jpg" alt="Team Member 5" class="team-photo">
+                        <h3 class="member-name">adhl</h3>
+                        <p class="member-role">Software Engineer</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="photo_2025-01-06_22-43-40.jpg" alt="Team Member 6" class="team-photo">
+                        <h3 class="member-name">adhl</h3>
+                        <p class="member-role">Software Engineer</p>
+                    </div>
+                </div>
+            </div>
+        
+        
+    </section>
+    <section id="Contact" class="adhil">
+ 
+  <!-- Background Video -->
+  <video class="background-video" autoplay muted loop>
+    <source src="WhatsApp Video 2025-01-18 at 17.44.45_eb339113.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <div class="contact-container">
+    <h1>Contact Us</h1>
+    <p>We’d love to hear from you!</p>
+    <button onclick="location.href='https://forms.gle/nCAVgT4gbBEgu59b7'">Click to Contact</button>
+
+    <div class="locations">
+      <h2>SCRATCHSTUDIOS_INDIA</h2>
+    </div>
+
+    <div class="owner-info">
+      <h3></h3>
+      <P>CEO:VEGNISH</P>
+      <p>MANAGER: Sarfaraz Sharu</p>
+      <p>Contact: <a href="tel:9043786005">9043786005</a></p>
+    </div>
+
+    <!-- Social Media Section -->
+    <div class="social-media">
+      <h3>Follow Us</h3>
+      <a href="https://www.facebook.com/yourpage" target="_blank"><i class="fab fa-facebook-square"></i></a>
+      <a href="https://www.instagram.com/scratchstudios_india?igsh=aWpvdzhsN3hjcnhq" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://t.me/yourtelegram" target="_blank"><i class="fab fa-telegram-plane"></i></a>
+    </div>
+  </div>
+
+
+    </section>
+
+  </main>
+
+   <footer>
+
+   </footer>
+
+</body>
+</html>
