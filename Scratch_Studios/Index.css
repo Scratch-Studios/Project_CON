@@ -261,7 +261,3 @@ nav ul li a:hover::after{
     animation: slideInRight 5s ease-in-out;
 }
 
-#services #outerbox {
-    margin-bottom: 30px;
-    animation-fill-mode: both; /* Ensure the animation stays in its final state */
-}
