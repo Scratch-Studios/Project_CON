@@ -1,91 +1,114 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
 
-  body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #fff;
-    background: url('WhatsApp Image 2025-01-14 at 19.36.07_ff90fc65.jpg') no-repeat center center/cover;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+body{
 
-  .contact-container {
-    background: rgba(0, 0, 0, 0.7);
-    padding: 20px 30px;
-    border-radius: 10px;
-    width: 90%;
-    max-width: 600px;
-    text-align: center;
-  }
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(90deg, #11224e,#11224e, #1a3b70);
+  background-attachment: fixed;
 
-  h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-  }
+}/* css for Contact */
+#Contact {
+   
+  line-height: 1.6;
+  color: #fff;
+ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background:rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  border: 1px solid #5c83c4;
+  border-radius: 20px;
+  height: auto;
+  width: 1100px;
+  margin: 150px 120px 80px 130px;
+  box-shadow: 2px 2px 2px 2px #5c83c4;
+}
 
-  p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-  }
+.contact-container {
+  padding: 20px 30px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 600px;
+  text-align: center;
+}
 
-  button {
-    padding: 10px 20px;
-    font-size: 1rem;
-    color: #fff;
-    background-color: #007BFF;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
+.contact-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
 
-  button:hover {
-    background-color: #0056b3;
-  }
+.contact-container p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
 
-  .locations, .owner-info {
-    margin-top: 20px;
-    text-align: left;
-  }
+.contact-container button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #007BFF;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
 
-  h2, h3 {
-    margin-bottom: 10px;
-  }
+.contact-container button:hover {
+  background-color: #0056b3;
+}
 
-  ul {
-    list-style-type: none;
-    padding-left: 0;
-  }
+.locations, .owner-info {
+  margin-top: 20px;
+  text-align: center;
+}
 
-  ul li {
-    margin-bottom: 10px;
-  }
+h2, h3 {
+  margin-bottom: 10px;
+}
 
-  a {
-    color: #00ffcc;
-    text-decoration: none;
-  }
 
-  a:hover {
-    text-decoration: underline;
-  }
-  .social-media {
-    margin-top: 20px;
-  }
+.social-media a {
+  color: #00ffcc;
+  text-decoration: none;
+  list-style: none;
+  margin: 0 10px;
+  font-size: 2rem;
+  color: #fff;
+  transition: color 0.3s;
+}
 
-  .social-media a {
-    margin: 0 10px;
-    font-size: 2rem;
-    color: #fff;
-    transition: color 0.3s;
-  }
+.social-media a:hover {
+  text-decoration: underline;
+  color: #00ffcc;
+}
 
-  .social-media a:hover {
-    color: #00ffcc;
-  }
+/* Social Media Icons */
+.social-media {
+  margin-top: 20px;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.contact-section {
+  position: relative;
+  z-index: 1;  /* Ensures content is above the video */
+  padding: 50px;
+  color: white;  /* Adjust text color to ensure it's readable over the video */
+}
+
+

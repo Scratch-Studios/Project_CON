@@ -4,90 +4,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>project</title>
     <link rel="stylesheet" href="project.css">
 </head>
 <body>
-    <section id="project">
-        <div class="container">
-
+    
+    <section id="Projects">
+        <div class="slider" id="slider">
             
-            <div id="outbox">
-              <div id ="card">
-
-              </div>
-                <div id="inerbox">
-             <img src="logo.png">
-                    <p></p>
-                </div>
-            </div>
-
-          
-            </div>
-
-            <div id="outbox">
-                <div id ="card">
+            <h1>Our Projects</h1>
+            
+            
+              <div class="slide">
+                <img src="logo.png" alt="">
+                 <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia, suscipit consequuntur soluta tempore numquam qui.</P>
                 
-                </div>
-            
-                <div id="inerbox">
-                    <img src="logo.png">
-                    <p></p>
-                </div>
-            </div>
-
-            
-
-
-
+              </div>
+              
+              <div class="slide">
+                <img src="logo.png" alt="">
+                <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia, suscipit consequuntur soluta tempore numquam qui.</P>
+                
+              </div>
+      
+              <div class="slide">
+                <img src="logo.png" alt="">
+                <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia, suscipit consequuntur soluta tempore numquam qui.</P>
+                
+              </div>
+    
         </div>
+
         <script>
-            document.addEventListener("DOMContentLoaded", function() {
-              const outboxes = document.querySelectorAll("#outbox");
-              let delay = 1000; // Initial delay before the first animation
-          
-              // Function to apply animation and restart the cycle
-              function slideIn() {
-                  // Loop through each outbox element
-                  outboxes.forEach((outbox, index) => {
-                      setTimeout(() => {
-                          // Apply different animation based on the index (odd or even)
-                          if (index % 2 === 0) {
-                              outbox.style.animation = "slideInFromRight 4s ease forwards";
-                          } else {
-                              outbox.style.animation = "slideInFromRight 4s ease forwards";
-                          }
-                          outbox.style.opacity = 1; // Make the element visible when the animation starts
-                      }, delay);
-                      delay += 7000; // Delay of 4 seconds for each box animation (this includes the animation duration)
-                  });
-          
-                  // Once all outboxes have been animated, restart the animation loop
-                  setTimeout(() => {
-                      // Reset animations for all outboxes and set opacity to 0
-                      outboxes.forEach(outbox => {
-                          outbox.style.animation = ''; // Clear the animation
-                          outbox.style.opacity = 0; // Reset opacity to 0
-                      });
-                      delay = 1000; // Reset delay for the next round of animations
-                      slideIn(); // Restart the loop
-                  }, delay + 1000); // Wait for all animations to finish before resetting and restarting
-              }
-          
-              slideIn(); // Start the animation loop
-          });
-          
-              </script>
-    </section>
+            const slides = document.querySelectorAll('.slide');
+            let currentSlide = 0;
+        
+            function showSlide(index) {
+              // Remove 'active' and 'exit' classes from all slides
+              slides.forEach((slide, i) => {
+                slide.classList.remove('active', 'exit');
+                if (i === index) {
+                  slide.classList.add('active'); // Add active class to the current slide
+                } else if (i === (index - 1 + slides.length) % slides.length) {
+                  slide.classList.add('exit'); // Add exit class to the previous slide
+                }
+              });
+            }
+        
+            function startSlider() {
+              showSlide(currentSlide);
+              setInterval(() => {
+                currentSlide = (currentSlide + 1) % slides.length; // Move to the next slide
+                showSlide(currentSlide);
+              }, 5000); // Change slide every 10 seconds
+            }
+        
+            // Start the slider
+            startSlider();
+          </script>
+        
+      </section>
 
  
 
-    </script>
-</body>
-</html>
-
-
-    </div>
-</section>
 </body>
 </html>

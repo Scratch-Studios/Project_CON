@@ -1,125 +1,191 @@
-body {
+*{
     margin: 0;
-    font-family: Arial, sans-serif;
-    background: linear-gradient(to right, #ff7e5f, #feb47b);
-    color: #333;
-    overflow-x: hidden;
+    padding: 0;
+    box-sizing: border-box;
+    
 }
-.about-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 50px;
-    animation: fadeIn 2s ease-in-out;
-}
-.logo-container {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    animation: slideInLeft 2s ease-in-out;
+body{
+ 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(90deg, #11224e,#11224e, #1a3b70);
+    background-attachment: fixed;
+  
 }
 
-.logo {
-    max-width: 200px;
-    border-radius: 50%;
-}
+/* css for About */
 
-.content-container {
-    flex: 2;
-    animation: slideInRight 2s ease-in-out;
-}
 
-.content-heading {
-    font-size: 36px;
-    margin-bottom: 20px;
-}
-
-.content-description {
-    font-size: 18px;
-    line-height: 1.6;
-}
-
-.team-container {
-    text-align: center;
-    padding: 50px;
-    background: rgba(255, 255, 255, 0.8);
-    border-radius: 10px;
-    margin: 20px;
-}
-.team-heading {
-    font-size: 28px;
-    margin-bottom: 30px;
-}
-.team-members {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.team-member {
-    text-align: center;
-    width: 150px;
-}
-
-.team-photo {
-    width: 100%;
-    border-radius: 50%;
-    border: 2px solid #ff7e5f;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-.member-name {
-    font-size: 16px;
-    margin: 10px 0 5px;
-}
-.member-role {
-    font-size: 14px;
-    color: #555;
-}
-
-@keyframes slideInLeft {
-    from {
-        transform: translateX(-100%);
-        opacity: 0;
+    /* General Styles */
+    #About {
+       
+        
+        color: #333;
+        background:rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(20px);
+        border: 1px solid #5c83c4;
+        border-radius: 20px;
+        height: auto;
+        width: 1100px;
+        margin: 150px 120px 0 130px;
+        box-shadow: 2px 2px 2px 2px #5c83c4;
+        
+        
+        height: auto; /* Ensure the background covers the entire viewport */
     }
-    to {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
+    
 
-@keyframes slideInRight {
-    from {
-        transform: translateX(100%);
-        opacity: 0;
-    }
-    to {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-    }
-@media (max-width: 768px) {
-    .about-container {
-        flex-direction: column;
+    /* Team Section */
+    .team-container {
         text-align: center;
+        padding: 50px;
+        border-radius: 10px;
+        margin: 20px;
     }
-
-    .content-container {
-        margin-top: 20px;
+    
+    .team-heading {
+        font-size: 28px;
+        margin-bottom: 50px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: white;
     }
-
+    
     .team-members {
-        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
     }
-
-}
+    
+    .team-member {
+        text-align: center;
+        width: 100px;
+        border: 3px solid white;
+        border-radius: 15px;
+        padding: 20px;
+        background: rgba(255, 255, 255, 0.8);
+    }
+    
+    .team-photo {
+        border-radius: 50%;
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    }
+    
+    .member-name {
+        font-size: 16px;
+        margin: 10px 0 5px;
+    }
+    
+    .member-role {
+        font-size: 14px;
+        color: #555;
+    }
+    
+    /* Animations */
+    @keyframes slideInLeft {
+        from {
+            transform: translateX(-100%);
+            opacity: 0;
+        }
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+    
+    @keyframes slideInRight {
+        from {
+            transform: translateX(100%);
+            opacity: 0;
+        }
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+    
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    
+    /* Responsive Styles for Mobile (max-width: 768px) */
+    @media (max-width: 768px) {
+        #About{
+            width: 100%;
+        }
+        .about-container {
+            flex-direction: column;
+            padding: 20px;
+            text-align: center;
+        }
+    
+        .logo {
+            max-width: 150px; /* Smaller logo */
+        }
+    
+        .content-container {
+            margin-top: 20px;
+        }
+    
+        .content-heading {
+            font-size: 28px; /* Smaller heading */
+        }
+    
+        .content-description {
+            font-size: 16px; /* Smaller text for description */
+            margin: 0 10px;
+        }
+    
+        .content-image {
+            max-width: 100%; /* Smaller image on mobile */
+        }
+    
+        .team-members {
+            flex-direction: column;
+            gap: 15px;
+        }
+    
+        .team-member {
+            width: 80%; /* Allow each team member to take more width */
+        }
+    
+        .team-photo {
+            width: 80%; /* Smaller photos for mobile */
+            margin-left: 30px;
+        }
+    }
+    
+    /* Larger Screen (Desktop) - Ensuring better view for large screens */
+    @media (min-width: 1024px) {
+        .about-container {
+            padding: 70px;
+        }
+    
+        .content-heading {
+            font-size: 42px; /* Larger heading for desktop */
+        }
+    
+        .content-description {
+            font-size: 20px; /* Larger text for description */
+        }
+    
+        .team-heading {
+            font-size: 32px; /* Bigger team heading */
+        }
+    
+        .team-members {
+            gap: 30px;
+        }
+    
+        .team-member {
+            width: 200px; /* Larger team member boxes */
+        }
+    
+        .team-photo {
+            width: 100%; /* Full size photo for desktop */
+        }
+    }

@@ -1,38 +1,74 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
+body{
+ 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(90deg, #11224e,#11224e, #1a3b70);
+    background-attachment: fixed;
+  
+}
+
+/* css for home */
 .Home{
+    height: 500px;
+    width: 1100px;
     display: flex;
-    padding: 50px;
+    padding: 70px;
     align-items: center;
     justify-content: center;
-    gap:50px;
-   
-  }
-  .content-left .logo {
-   margin-top: 50px;
-    width: 450px; 
-    height: 450px ;
-     
-      background-color: white; /* Ensure logo visibility */
-      
-      box-shadow: 
-          -10px -10px 20px rgba(0, 0, 0, 0.1), /* Top-left shadow */
-          10px 10px 20px rgba(0, 0, 0, 0.2);  /* Bottom-right shadow */
-  
+    gap:70px;
+    margin-top: 150px;
+    margin-left: 130px;
+    box-shadow: 2px 2px 2px 1px #5c83c4;
+    background:rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    padding: 60px;
+    border-radius: 20px;
     
+  }
+  .content-left .main-logo {
+   
+    width: 350px; 
+    height: 350px ;
+
   }
  
   .content-right {
+  
     flex-grow: 1; 
-    overflow-y: auto;
-    font-size: 18px; 
-    line-height: 1.7; 
+    line-height:1.5; 
+}
+.content-right p {
+    margin-top:  10px; 
+    text-align: justify;
+    font-size: 20px;
+    color: white;
 }
 
-.content-right p {
-    margin-top:  20px; 
-    text-align: justify;
+/* responsive for home */
+@media (max-width: 768px) {
+    .Home {
+        width: 100%;
+        margin-top: 80px;
+        padding: 35px;
+        flex-direction: column; /* Stack content vertically */
+        align-items: center;
+        gap: 10px; /* Adjust gap for vertical layout */
+    }
+
+    .content-left .logo {
+        margin-top: 0;
+        width: 200px;
+        height: 200px; /* Further reduce logo size */
+    }
+
+    .content-right {
+        font-size: 5px; /* Smaller font for mobile devices */
+        
+          
+    }
 }
