@@ -5,14 +5,13 @@
     box-sizing: border-box;
     
 }
-body{
- 
+/* General body styling */
+body {
+    background-color: black;
+    margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(90deg, #11224e,#11224e, #1a3b70);
-    background-attachment: fixed;
-  
 }
-/* css for services */
+
 #services {
   
     display: flex; 
@@ -29,11 +28,9 @@ body{
     margin: 150px 120px 0 130px;
     box-shadow: 2px 2px 2px 2px #5c83c4; 
    
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-
-#services .title{
+ .title{
     height: 80px;
     width: 700px;
     margin-bottom: 100px;
@@ -43,7 +40,7 @@ body{
     align-items: center; /* Center vertically */
     justify-content: center; 
 }
-#services .title h2{
+.title h2{
     font-size: 30px;
     text-transform: capitalize;
     font-weight: 1000rem;
@@ -52,91 +49,69 @@ body{
     
 }
 
-#services #outerbox{
-    margin-bottom: 30px;
+.outerbox{
+  
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+    position: relative;
+    opacity: 0;
+    width: 800px;
+    transform: translateX(0);
+    padding: 10px;
+    
 }
-#services #icon-left{
-    width: 60px;
-   
-    float: left;
-}
-#services #innerbox{
+
+ .innerbox{
     height: 65px;
     width: 720px;
-    background:rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(30px);
-   
-    margin-left: 80px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px); /* Reduce blur */
+    border: 2px solid #5c83c4;  /* Make border more visible */
     border-radius: 50px;
-    border: 1px solid #5c83c4;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
-
-
-#services #icon-right{
-    width: 60px;
-    float: right;
-}
-#services #innerbox-right{
+.innerbox-right{
     height: 65px;
     width: 720px;
-    background:rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(30px);
-    border: 1px solid #5c83c4;
-    margin-right: 80px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px); /* Reduce blur */
+    border: 1px solid #5c83c4;  /* Make border more visible */
     border-radius: 50px;
     
 }
-#services h1{
+
+.icon-left{
+    width: 60px;
+    margin-right: 20px;
+   
+}
+.icon-right{
+    width: 60px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+  
+}
+
+ h1{
     color: white;
     font-size: 20px;
-    font-style: oblique;
     text-align: center;
     margin-top: 18px;
     
 }
 
-/* responsive for services  */
-@media(max-width:850px){
-
-    #services{
-        width: 100%;
-    }
-    .container .title{
-        width: 340px;
-        
-    }
-   .container .title h2{
-
-        font-size: 22px;
-        color: white;
-   }
-   #innerbox{
-    width: 250px;
-    
-   }
-   #innerbox-right{
-    width: 250px;
-    
-   }
-   h1{
-    font-size: 20px;
-    margin-top: 15px;
-   }
-   #icon-right{
-    width: 50px;
-   }
-   #icon-left{
-    width: 50px;
-   }
-
-}
-
-/* animation for services */
+/* Animations */
 @keyframes slideInLeft {
     from {
         opacity: 0;
-        transform: translateX(-100%);
+        transform: translateX(-100px);
     }
     to {
         opacity: 1;
@@ -147,23 +122,10 @@ body{
 @keyframes slideInRight {
     from {
         opacity: 0;
-        transform: translateX(100%);
+        transform: translateX(100px);
     }
     to {
         opacity: 1;
         transform: translateX(0);
     }
-}
-
-#services #outerbox:nth-child(even) {
-    animation: slideInLeft 5s ease-in-out;
-}
-
-#services #outerbox:nth-child(odd) {
-    animation: slideInRight 5s ease-in-out;
-}
-
-#services #outerbox {
-    margin-bottom: 30px;
-    animation-fill-mode: both; /* Ensure the animation stays in its final state */
 }

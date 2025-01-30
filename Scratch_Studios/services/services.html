@@ -3,58 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>services</title>
+    <title>Our Services</title>
     <link rel="stylesheet" href="services.css">
 </head>
 <body>
     <section id="services">
-        
         <div class="title">
-            <h2>Our services and Products</h2>
+            <h2>Our Services and Products</h2>
         </div>
-        <div id="outerbox">
-            <img src="WEB DESIGN ICON.png" alt="" id="icon-left">
-            <div id="innerbox">
+
+        <div class="outerbox">
+            <img src="WEB DESIGN ICON.png" alt="Web Design Icon" class="icon-left">
+            <div class="innerbox">
                 <h1>Web Design</h1>
             </div>
         </div>
 
-        <div id="outerbox">
-            <img src="BRANDDESIGN ICON.png" alt="" id="icon-right">
-            <div id="innerbox-right">
+        <div class="outerbox">
+            <img src="BRANDDESIGN ICON.png" alt="Brand Design Icon" class="icon-right">
+            <div class="innerbox-right">
                 <h1>Brand Design</h1>
             </div>
         </div>
 
-        <div id="outerbox">
-            <img src="CONTENT WRITING ICON.png" alt="" id="icon-left">
-            <div id="innerbox">
+        <div class="outerbox">
+            <img src="CONTENT WRITING ICON.png" alt="Content Writing Icon" class="icon-left">
+            <div class="innerbox">
                 <h1>Content Writing</h1>
             </div>
         </div>
 
-        <div id="outerbox">
-            <img src="DIGITALMARKETING ICON.png" alt="" id="icon-right">
-            <div id="innerbox-right">
-                <h1>Digital Marketing</div>
-                </div></h1>
+        <div class="outerbox">
+            <img src="DIGITALMARKETING ICON.png" alt="Digital Marketing Icon" class="icon-right">
+            <div class="innerbox-right">
+                <h1>Digital Marketing</h1>
+            </div>
+        </div>
 
-        <div id="outerbox">
-            <img src="PRINT DESIGN ICON.png" alt="" id="icon-left">
-            <div id="innerbox">
+        <div class="outerbox">
+            <img src="PRINT DESIGN ICON.png" alt="Print Design Icon" class="icon-left">
+            <div class="innerbox">
                 <h1>Print Design</h1>
             </div>
         </div>
 
-        <div id="outerbox">
-            <img src="GAME DEVELOPMENT ICON.png" alt="" id="icon-right">
-            <div id="innerbox-right">
+        <div class="outerbox">
+            <img src="GAME DEVELOPMENT ICON.png" alt="Game Development Icon" class="icon-right">
+            <div class="innerbox-right">
                 <h1>Game Development</h1>
             </div>
         </div>
+   
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const outerBoxes = document.querySelectorAll(".outerbox");
+        const options = {
+            root: null, // viewport
+            threshold: 0.2, // trigger when 20% is visible
+        };
 
-    </div> 
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach((entry, index) => {
+                if (entry.isIntersecting) {
+                    let delay = index * 700; // Reduce delay to 500ms
+                    entry.target.style.animation = index % 2 === 0 
+                        ? `slideInLeft 1.5s ease-in-out ${delay}ms forwards`
+                        : `slideInRight 1.5s ease-in-out ${delay}ms forwards`;
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, options);
 
-</section>
+        outerBoxes.forEach(box => {
+            observer.observe(box);
+        });
+    });
+    </script>
+     </section>
+
 </body>
 </html>
